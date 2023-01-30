@@ -1,0 +1,41 @@
+@import url("reset.css");
+
+div {
+   color: rgb(20, 81, 20);
+}
+h1 {
+   color: blue;
+}
+.text-begin p {
+   color: rgb(31, 149, 149);
+}
+.life h2 {
+   color: rgb(32, 125, 125);
+}
+.text h2 {
+   color: brown;
+}
+span {
+   color: red;
+}
+.img h3 {
+   color: blueviolet;
+}
+.link .list {
+   color: lightsalmon;
+}
+.list {
+   color: orange;
+}
+#offset {
+   color: rgb(205, 205, 42);
+}
+.johnson.visits {
+   color: pink;
+}
+.visited {
+   color: lightskyblue;
+}
+[class*="__bottom"] {
+   color: rgb(216, 47, 47);
+}
