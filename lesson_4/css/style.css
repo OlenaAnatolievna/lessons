@@ -1,0 +1,87 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:regular,italic,700,700italic&display=swap);
+
+@font-face {
+   font-family: 'CircularStd';
+   src: url('../fonts/CircularStd-Bold.woff') format('woff2'),
+      url('../fonts/CircularStd-Bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'CircularStd';
+   src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+      url('../fonts/CircularStd-Book.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+body {
+   font-family: "Poppins" ;
+   font-size: 18px;
+   font-weight: 300;
+   line-height: 1.2;
+   text-align: justify;
+}
+
+h1 {
+   font-family: "Lobster Two";
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 2;
+   color: rgb(33, 172, 197);
+   text-align: center;
+   text-shadow: 2px 3px 5px rgb(215, 208, 28);
+}
+h2 {
+   font-family: "CircularStd";
+   font-size: 20px;
+   line-height: 1.5;
+   text-decoration: underline;
+   text-align: center;
+   text-transform: uppercase;
+   color: greenyellow;
+   letter-spacing: 2px;
+}
+p {
+   text-indent: 15px;
+}
+span {
+   color: rgb(190, 27, 149);
+   text-decoration: underline;
+}
+.font-poppins {
+   color: rgb(96, 94, 94);
+}
+.font-vollkorn {
+   font-family: "Vollkorn";
+   font-size: 16px;
+   color: blueviolet;
+   font-weight: 400;
+}
+.font-lobstertwo {
+   font-family: "Lobster Two";
+   font-weight: 400;
+   word-spacing: 2px;
+   color: rgb(22, 103, 137);
+}
+.font-circularstd {
+   font-family: "CircularStd";
+   font-weight: 500;
+   font-size: 16px;
+   color: rgb(193, 32, 32);
+}
+.home {
+   text-align: center;
+   line-height: 1.5;
+   color: blue;
+}
+footer {
+   text-align: center;
+   font-weight: 500;
+   font-style: italic;
+}
