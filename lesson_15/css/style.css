@@ -1,0 +1,239 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-size: 18px;
+   color: #9C9C9C;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+.page {}
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0px auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.section-1 {}
+.section-1__container {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.section-1__main-header {
+   margin-bottom: 53px;
+}
+.main-header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: 40px;
+}
+.main-header__title {
+   max-width: 490px;
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.39; /* 78/56 */
+   color: #000000;
+}
+.main-header__text {
+   max-width: 520px;
+   font-weight: 400;
+   line-height: 1.61; /* 29/18 */
+   color: #000000;
+   text-align: center;
+}
+
+.section-1__main-image img {
+   max-width: 100%;
+   transition: transform 0.8s;
+}
+.section-1__main-image {
+   margin-bottom: 100px;
+   overflow: hidden;
+}
+.section-1__main-image:hover img {
+   transform: scale(1.03);
+}
+
+.section-1__about {
+   margin-bottom: 82px;
+}
+.about {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 32px;
+}
+.about__left-side {}
+.about__right-side {}
+.left-side {
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 48.6%;
+}
+.left-side__head {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.41; /* 34/24 */
+   color: #333333;
+   margin-bottom: 24px;
+   transition: all 0.3s;
+}
+.left-side__head:hover {
+   text-decoration: underline;
+   color: #9C9C9C;
+}
+.left-side__read {
+   flex-grow: 1;
+   font-weight: 400;
+   line-height: 1.61; /* 29/18 */
+}
+.left-side__footer {}
+.footer {
+   display: flex;
+   column-gap: 80px;
+}
+.footer__date {
+   font-weight: 400;
+   line-height: 1.61; /* 29/18 */
+}
+.footer__label {
+   font-weight: 400;
+   line-height: 1.61; /* 29/18 */
+}
+
+.right-side {
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 51.6%;
+   padding-left: 32px;
+}
+.right-side__head {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.41; /* 34/24 */
+   color: #333333;
+   margin-bottom: 24px;
+   transition: all 0.3s;
+}
+.right-side__head:hover {
+   text-decoration: underline;
+   color: #9C9C9C;
+}
+.right-side__read {
+   font-weight: 400;
+   line-height: 1.61; /* 29/18 */
+}
+.right-side__read>*:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+.section-1__gallery {}
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 32px;
+}
+.gallery__item {
+   overflow: hidden;
+}
+.gallery__pic {}
+.gallery__pic img {
+   max-width: 100%;
+   transition: transform 0.8s;
+}
+.gallery__pic:hover img {
+   transform: scale(1.03);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.section-2 {}
+.section-2__container {
+   padding-bottom: 100px;
+}
+.section-2__header {}
+.section-2__header:not(:last-child) {
+   margin-bottom: 40px;
+}
+.header-block {
+   display: flex;
+   column-gap: 26px;
+}
+.header-block__title {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   text-transform: uppercase;
+   color: #000000;
+}
+.header-block__image-design {
+   display: flex;
+   align-items: center;
+}
+.header-block__image-design img {
+   max-width: 100%;
+}
+
+.section-2__body {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 40px;
+}
+.body {}
+.body__block {
+   display: flex;
+   justify-content: space-between;
+}
+.body__image {
+   flex: 0 1 62.17%;
+   overflow: hidden;
+}
+.body__image img {
+   max-width: 100%;
+   transition: transform 0.3s;
+}
+.body__image:hover img {
+   transform: scale(1.05);
+}
+.image {}
+.image__link {}
+
+.body__text {
+   flex: 0 1 37.83%;
+   padding-left: 120px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 20px;
+}
+.text {}
+.text__sub-title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.4;
+   color: #333333;
+}
+.text__sub-text {
+   font-weight: 400;
+   line-height: 1.6;
+}
+.text__sub-text:hover {
+   color: #000;
+}
+.text__sub-link {}
