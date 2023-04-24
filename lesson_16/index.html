@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Lesson 16</title>
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <header></header>
+         <main class="page">
+            <div class="page__billing billing">
+               <div class="billing__container">
+                  <h2 class="billing__title">Billing Details</h2>
+                  <form class="billing__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST" enctype="multipart/form-data">
+                     <div class="form__data data">
+                        <div class="data__wrapper">
+                           <input class="data__item" type="text" name="username" placeholder="First name*" required tabindex="1">
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="text" name="userlastname" placeholder="Last name*" required tabindex="2">
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="text" name="adress" placeholder="Address*" required tabindex="3">
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="text" name="adress2" placeholder="Address line 2" tabindex="4">
+                        </div>
+                        <div class="data__wrapper wrapper-list">
+                           <select class="wrapper-list__item" name="country" required tabindex="5">
+                              <option class="wrapper-list__country" value="">Country*</option>
+                              <option class="wrapper-list__country" value="ukraine">Ukraine</option>
+                              <option class="wrapper-list__country" value="italy">Italy</option>
+                              <option class="wrapper-list__country" value="spain">Spain</option>
+                              <option class="wrapper-list__country" value="france">France</option>
+                           </select>
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="text" name="city" placeholder="City/Town*" required tabindex="6">
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="text" name="postcode" placeholder="Postcode / ZIP*" required tabindex="7">
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="tel" name="phone" placeholder="Phone*" required tabindex="8">
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="text" name="postcode2" placeholder="Postcode / ZIP*" required tabindex="9">
+                        </div>
+                        <div class="data__wrapper">
+                           <input class="data__item" type="tel" name="phone2" placeholder="Phone*" required tabindex="10">
+                        </div>
+                        <div class="data__wrapper wrapper-text">
+                           <textarea class="wrapper-text__item" name="addinfo" id="infoadd" placeholder="Additional information"></textarea>
+                        </div>
+                     </div>
+                     <div class="form__checkbox checkbox">
+                        <div class="checkbox__wrapper">
+                           <input id="account-01" class="checkbox__item" name="account" type="checkbox" checked tabindex="11">
+                           <label for="account-01" class="checkbox__label">Create Account</label>
+                        </div>
+                        <div class="checkbox__wrapper">
+                           <input id="ship" class="checkbox__item" name="account" type="checkbox" tabindex="12">
+                           <label for="ship" class="checkbox__label">Ship to a different address?</label>
+                        </div>
+                     </div>
+                     <div class="form__apply apply">
+                        <h2 class="apply__title">Apply Coupon to get discount!</h2>
+                        <div class="apply__code code">
+                           <div class="code__field">
+                              <input class="code__coupon" type="text" name="coupon" placeholder="Coupon code" tabindex="13">
+                           </div>
+                           <div class="code__button">
+                              <button class="code__submit" type="submit">Apply Code</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <!--===========================================================================--> 
+            <div class="page__shipping shipping">
+               <div class="shipping__container">
+                  <h2 class="shipping__title">Shipping Address</h2>
+                  <form action="https://jsonplaceholder.typicode.com/posts" class="shipping__form-one" method="POST" enctype="multipart/form-data">
+                     <div class="shipping__input-wrapper">
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="mail-01">Email Address <span class="red">*</span></label>
+                           <input class="shipping__input" id="mail-01" type="email" name="mail" placeholder="roni_cost@example.com" required tabindex="14">
+                        </div>
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="pass-01">Password</label>
+                           <input class="shipping__input" id="pass-01" type="password" name="pass" placeholder="******************" tabindex="15">
+                        </div>
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="post-01">Zip/Postal Code</label>
+                           <input class="shipping__input" id="post-01" type="text" name="postal" tabindex="16">
+                        </div>
+                     </div>
+                     <div class="shipping__text">You already have an account with us. Sign in or continue as guest.</div>
+                     <div class="shipping__button-block">
+                        <div class="shipping__button button">
+                           <button class="button__black" type="submit" tabindex="17">login</button>
+                        </div>
+                        <div class="shipping__item">
+                           <a class="shipping__link" href="#">Forgot Your Password?</a>
+                        </div>
+                     </div>
+                  </form>
+                  <!--===========================================================================-->
+                  <form class="shipping__form-two" action="https://jsonplaceholder.typicode.com/posts" method="POST" enctype="multipart/form-data">
+                     <div class="shipping__input-wrapper input-wrapper__margin">
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="name-01">First Name <span class="red">*</span></label>
+                           <input class="shipping__input" id="name-01" type="text" name="firstname"  required tabindex="18">
+                        </div>
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="name-02">Last Name <span class="red">*</span></label>
+                           <input class="shipping__input" id="name-02" type="text" name="lastname" tabindex="19">
+                        </div>
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="company-01">Company</label>
+                           <input class="shipping__input" id="company-01" type="text" name="company" tabindex="20">
+                        </div>
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="adress-01">Street Address <span class="red">*</span></label>
+                           <div class="shipping__block-input">
+                              <input class="shipping__input" id="adress-01" type="text" name="streetadress" required tabindex="21">
+                              <input class="shipping__input" id="adress-02" type="text" name="streetadress-02" tabindex="22">
+                              <input class="shipping__input" id="adress-03" type="text" name="streetadress-03" tabindex="23">
+                           </div>
+                        </div>
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="country-01">Country <span class="red">*</span></label>
+                           <input class="shipping__input" id="country-01" type="text" name="country01" tabindex="24">
+                        </div>
+                        <div class="shipping__line">
+                           <label class="shipping__label" for="state-01">State/Province  <span class="red">*</span></label>
+                           <select class="shipping__input" name="state" id="state-01" tabindex="25">
+                              <option value="">Please select a region, state or province</option>
+                              <option value="ukraine">Ukraine</option>
+                              <option value="spain">Spain</option>
+                              <option value="finland">Finland</option>
+                              <option value="greece">Greece</option>
+                              <option value="switzerland">Switzerland</option>
+                           </select>
+                        </div>
+                     </div>
+                     <h2 class="shipping__title title__margin">Shipping Methods</h2>
+                     <div class="shipping__radio-wrapper">
+                        <div class="shipping__radio-body">
+                           <div class="shipping__radio-input">
+                              <input class="shipping__radio-item" id="5-dollars" type="radio" checked name="price" value="fixed" tabindex="26">
+                              <label class="shipping__radio-label" for="5-dollars">$5.00</label>
+                           </div>
+                           <div class="shipping__radio-value">Fixed</div>
+                           <div class="shipping__radio-rate">Flat Rate</div>
+                        </div>
+                        <div class="shipping__grey-line"></div>
+                        <div class="shipping__radio-body">
+                           <div class="shipping__radio-input">
+                              <input class="shipping__radio-item" id="10-dollars" type="radio" name="price" value="table-rate" tabindex="27">
+                              <label class="shipping__radio-label" for="10-dollars">$10.00</label>
+                           </div>
+                           <div class="shipping__radio-value">Table Rate</div>
+                           <div class="shipping__radio-rate">Best Way</div>
+                        </div>
+                     </div>
+                     <div class="shipping__button-part">
+                        <div class="shipping__button button">
+                           <button class="button__black" type="submit" tabindex="28">next</button>
+                        </div>
+                        <div class="shipping__link-back">
+                           <a class="shipping__back-link" href="#">Back</a>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </main>
+         <footer></footer>
+      </div>
+   </body>
+</html>
