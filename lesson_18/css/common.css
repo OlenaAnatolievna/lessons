@@ -1,0 +1,58 @@
+.header__logo {
+   position: relative;
+   z-index: 2;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.38; /* 25/18 */
+   color: #495057;
+}
+.dot {
+   color: #DDBEA9;
+}
+/* ---------------------------- */
+.title {
+   max-width: 535px;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.6; /* 40/25 */
+   color: #F8F9FA;
+   z-index: 1;
+}
+.title_black {
+   max-width: 395px;
+   color: #212529;
+}
+.text {
+   font-weight: 300;
+   line-height: 1.66; /* 20/12 */
+   color: #E5E5E5;
+   z-index: 1;
+}
+/* ---------------------------- */
+.subtitle__link {
+   font-size: 16px;
+   line-height: 1.66; /* 25/16 */
+   transition: color 0.3s;
+}
+.subtitle:hover .subtitle__link {
+   color: #DDBEA9;
+}
+.date {
+   font-weight: 300;
+   line-height: 1.6; /* 20/12 */
+   color: #6C757D;
+}
+.date_color {
+   color: #495057;
+}
+/* ---------------------------- */
+.list-media {
+   display: flex;
+   column-gap: 25px;
+   row-gap: 10px;
+}
+.list-media__link {
+   line-height: 2.08; /* 25/12 */
+   color: rgba(248, 249, 250, 0.5);
+   transition: color 0.3s;
+}
