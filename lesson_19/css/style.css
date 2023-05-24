@@ -1,0 +1,245 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap");
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   color: #9C9C9C;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+/* ================================= */
+[class*="__container"] {
+   max-width: 1230px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+}
+
+/* ================================== */
+
+.page {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.page__transition {
+   max-width: 200px;
+   margin: 0 auto;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   column-gap: 15px;
+   row-gap: 5px;
+   border: 1px solid #E7E7E7;
+   border-radius: 10px;
+   margin-bottom: 30px;
+}
+.page__page-2 {}
+.page__page-3 {}
+.page-2,
+.page-3 {
+   padding: 5px;
+   background: #FAFAFA;
+   border: 1px solid #E7E7E7;
+   border-radius: 10px;
+   text-align: center;
+   transition: background 0.3s;
+}
+.page-2__link,
+.page-3__link {
+   font-size: 16px;
+   text-transform: uppercase;
+   line-height: 1.5;
+   color: #212B36;
+   transition: color 0.3s;
+}
+.page-2:hover {
+   background: #FFF;
+}
+.page-3:hover {
+   background: #FFF;
+}
+.page-2:hover .page-2__link {
+   color: #637381;
+}
+.page-3:hover .page-3__link {
+   color: #637381;
+}
+ /* --------------------------- */
+.page__container {}
+.page__block {}
+.page__block:not(:last-child) {
+   margin-bottom: 82px;
+}
+/* --------------------------- */
+.block {
+   display: grid;
+   column-gap: 32px;
+   row-gap: 10px;
+   grid-template-columns: repeat(2, 1fr);
+}
+.block__item p:not(:last-child) {
+   margin-bottom: 30px;
+}
+/* --------------------------- */
+.block__item {}
+.item-left-side {
+   display: grid;
+   grid-auto-flow: row;
+   grid-template: minmax(35px, auto) 1fr minmax(30px, auto) / 1fr;
+   row-gap: 24px;
+} 
+.title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.4;
+   color: #333333;
+   transition: color 0.3s;
+}
+.text {
+   line-height: 1.6;
+}
+.item-left-side__title:hover .item-left-side__link {
+   color: #DDBEA9;
+}
+.item-left-side__title {}
+.item-left-side__text {}
+.item__footer {}
+.footer-text {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 80px;
+   row-gap: 10px;
+   line-height: 1.6;
+}
+.footer-text__date {}
+.footer-text__info {}
+/* --------------------------- */
+.item-right-side {
+   display: grid;
+   grid-auto-flow: row;
+   grid-template: minmax(35px, auto) 1fr / 1fr;
+   row-gap: 24px;
+}
+.item-right-side__title {}
+.item-right-side__text {}
+
+/* ================================== */
+
+.page__gallery {}
+.gallery {
+   display: grid;
+   gap: 32px;
+   grid-template-columns: repeat(2, 1fr);
+}
+.gallery__image {
+   position: relative;
+   padding-bottom: 87.842466%; /* 513/584 */
+   overflow: hidden;
+}
+.gallery__image img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s;
+}
+.gallery__image_big {
+   grid-column: span 2;
+   position: relative;
+   padding-bottom: 42.75%; /* 513/1200 */
+}
+.gallery__image_big img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.gallery__image:hover img {
+   transform: scale(1.03);
+}
+
+@media (max-width: 1240px) {
+   .page {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .page__block:not(:last-child) {
+      margin-bottom: 55px;
+   }
+   .block__item p:not(:last-child) {
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .page__block {
+      font-size: 20px;
+      line-height: 1.25; /* 25/20 */
+   }
+   .title {
+      font-size: 26px;
+   }
+   .footer-text {
+      column-gap: 30px;
+      row-gap: 10px;
+   }
+   .gallery {
+      gap: 20px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .page {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+   .page__block:not(:last-child) {
+      margin-bottom: 30px;
+   }
+   .item-left-side,
+   .item-right-side {
+      row-gap: 15px;
+   }
+   .footer-text {
+      row-gap: 5px;
+   }
+}
+
+@media (max-width: 667.98px) {
+   .block {
+      grid-template-columns: 1fr;
+   }
+   .title {
+      text-align: center;
+   }
+   .footer-text {
+      justify-content: center;
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 479.98px) {
+   .gallery {
+      grid-template-columns: 1fr;
+   }
+   .gallery__image_big {
+      grid-column: span 1;
+   }
+}
